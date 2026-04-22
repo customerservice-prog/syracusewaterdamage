@@ -43,7 +43,8 @@
       } catch(err) {
         btn.disabled = false;
         btn.textContent = "Send — we'll call you in 15 minutes";
-        alert('Something went wrong. Please call us directly at (315) XXX-XXXX.');
+        const p = (typeof window.SITE !== 'undefined' && window.SITE && window.SITE.PHONE_DISPLAY) ? window.SITE.PHONE_DISPLAY : '(315) XXX-XXXX';
+        alert('Something went wrong. Please call us directly at ' + p + '.');
       }
     });
   }
