@@ -1,0 +1,15 @@
+{
+  "name": "syracusewaterdamage",
+  "private": true,
+  "type": "module",
+  "description": "Static lead-gen site served on Railway; production DNS may still use Cloudflare.",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
